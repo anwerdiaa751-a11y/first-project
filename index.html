@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anwar Diaa Portfolio</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav class="navbar container">
+            <a href="#hero" class="logo">Anwar Diaa</a>
+            <ul class="nav-links">
+                <li><a href="#about" data-i18n="nav_about">About</a></li>
+                <li><a href="#projects" data-i18n="nav_projects">Projects</a></li>
+                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <select id="lang-switcher" aria-label="Select Language">
+                    <option value="en">EN</option>
+                    <option value="ar">AR</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <h1 data-i18n="hero_title">Hi, I'm Anwar Diaa</h1>
+                <p class="tagline" data-i18n="hero_tagline">Front-End Developer | Building AI, Automation & Web
+                    Solutions</p>
+                <a href="#projects" class="btn btn-primary" data-i18n="hero_btn">View Projects</a>
+            </div>
+        </section>
+
+        <section id="about" class="about-section container">
+            <h2 class="section-title" data-i18n="about_title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-img-wrapper">
+                    <img src="[path/to/headshot.jpg]" alt="[Your Name] Headshot" class="headshot-placeholder">
+                </div>
+                <div class="about-text">
+                    <p data-i18n="about_bio">I am a passionate Front-End Developer with extensive experience in creating
+                        intelligent systems, automation scripts, and responsive web applications. I love turning complex
+                        problems into elegant, user-friendly solutions.</p>
+                    <h3 data-i18n="skills_title">Key Skills</h3>
+                    <ul class="skills-list">
+                        <li>AI & Machine Learning</li>
+                        <li>Automation</li>
+                        <li>Web Development</li>
+                        <li>Robotics</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section container">
+            <h2 class="section-title" data-i18n="projects_title">Featured Projects</h2>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <img src="[path/to/project1.jpg]" alt="Project 1 preview" class="project-img">
+                    <div class="project-info">
+                        <h3 data-i18n="proj1_title">[Project Title 1]</h3>
+                        <p data-i18n="proj1_desc">A brief description of your project highlighting key technologies used
+                            and features implemented.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary" data-i18n="btn_live">View Live</a>
+                            <a href="#" class="btn btn-outline" data-i18n="btn_github">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <img src="[path/to/project2.jpg]" alt="Project 2 preview" class="project-img">
+                    <div class="project-info">
+                        <h3 data-i18n="proj2_title">[Project Title 2]</h3>
+                        <p data-i18n="proj2_desc">A brief description of your project highlighting key technologies used
+                            and features implemented.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-secondary" data-i18n="btn_live">View Live</a>
+                            <a href="#" class="btn btn-outline" data-i18n="btn_github">GitHub Repo</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section container">
+            <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+            <div class="contact-wrapper">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name" data-i18n="form_name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="[Your Name]" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n="form_email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="[your.email@example.com]" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" data-i18n="form_subject">Subject</label>
+                        <input type="text" id="subject" name="subject" placeholder="[Subject]" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n="form_message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="[Your Message here...]"
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" data-i18n="form_send">Send Message</button>
+                </form>
+                <div class="social-links">
+                    <a href="www.linkedin.com/in/anwer-diaa-459a703a8" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <p data-i18n="footer_copy">&copy; 2026 Anwar Diaa. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../JS/react.js"></script>
+</body>
+
+</html>
